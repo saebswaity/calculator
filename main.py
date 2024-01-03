@@ -60,10 +60,6 @@ process2 = Process(initial_state=10)
 
 print("Initial State:", process2.get_state())  # Output: Initial State: 10
 
-add_5 = Process.add(5)
-subtract_3 = Process.subtract(3)
-multiply_2 = Process.multiply(2)
-divide_4 = Process.divide(4)
 
 compose_operations = Process.compose_functions([add_5, subtract_3, multiply_2, divide_4])
 process2.set_state(compose_operations)
